@@ -1,0 +1,30 @@
+<script>
+  let obj = {
+    a: 10,
+    b: 20,
+    f1: function () {
+      console.log("F1.... ", this);
+
+      let self = this;
+      let that = this;
+      function f2() {
+        // this = how its called
+        console.log("F2... ", this); // window
+        console.log("F2... ", that); // obj
+        console.log("F2... ", self); // obj
+      }
+      f2();
+
+      f3 = () => {
+        // this = where its written
+        console.log("F3... ", this);
+      };
+      f3();
+    },
+  };
+  obj.f1();
+</script>
+
+
+
+

@@ -1,0 +1,18 @@
+<script>
+  let user = { // object literal
+    firstName: "Lokesh",
+    lastName: " Ready",
+    fullName1: function () {
+      // regular : this = user
+      console.log(this);
+      console.log("FullName-1: ", this.firstName, this.lastName);
+    },
+    fullName2: () => {
+      // arrow : this = window
+      console.log(this);
+      console.log("FullName-2: ", this.firstName, this.lastName);
+    }
+  };
+  user.fullName1();
+  user.fullName2();
+</script>

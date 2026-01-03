@@ -1,0 +1,25 @@
+<script>
+  // function declaration (named function)
+  add(10, 20);
+  function add(a, b) {
+    console.log(a + b);
+  }
+  add(20, 30);
+
+  // function expression (anonymous)
+  let sub = function (a, b) {
+    console.log(a - b);
+  };
+  sub(20, 10);
+
+  // selfInvoked
+  (function (a, b) {
+    console.log(`multiplication is ${a * b}`);
+  })(10, 20);
+
+  // Arrow
+  let div = (a, b) => {
+    console.log("division ", a / b);
+  };
+  div(20, 10);
+</script>
