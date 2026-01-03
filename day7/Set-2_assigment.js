@@ -9,6 +9,8 @@ function charOccurrence(str) {
 console.log(charOccurrence("entertainment"));
 // { e: 3, n: 2, t: 3, e... }
 
+
+
 // 2) Character repeated max times (ignore spaces, output uppercase)
 function maxRepeatedChar(str) {
   const freq = {};
@@ -29,6 +31,8 @@ function maxRepeatedChar(str) {
 }
 console.log(maxRepeatedChar("hello world")); // L
 
+
+
 // 3) Swap case for each character
 function swapCase(str) {
   let out = "";
@@ -41,6 +45,8 @@ function swapCase(str) {
 }
 console.log(swapCase("Hello World")); // hELLO wORLD
 
+
+
 // 4) Abbreviation (R. N. tagore)
 function abbreviation(fullName) {
   const parts = fullName.split(" ").filter(Boolean);
@@ -50,6 +56,8 @@ function abbreviation(fullName) {
   return (initials.length ? initials.join(" ") + " " : "") + last;
 }
 console.log(abbreviation("Rabindra Nath Tagore")); // R. N. tagore
+
+
 
 // 5) Shift characters to next (abcxyz → bcdyza)
 function shiftNext(str) {
@@ -64,6 +72,8 @@ function shiftNext(str) {
   return out;
 }
 console.log(shiftNext("abcxyz")); // bcdyza
+
+
 
 // 6) Validate parentheses sequence ( () [] {} )
 function isValidParentheses(s) {
@@ -80,6 +90,8 @@ function isValidParentheses(s) {
 }
 console.log(isValidParentheses("([{ }])".replace(/\s/g, ""))); // true
 
+
+
 // 7) Permutations of 3-letter word (ABC)
 function permutations3(word) {
   if (word.length !== 3) return [];
@@ -87,6 +99,8 @@ function permutations3(word) {
   return [a+b+c, a+c+b, b+a+c, b+c+a, c+a+b, c+b+a];
 }
 console.log(permutations3("ABC")); // [ 'ABC', 'ACB', 'BAC', 'BCA', 'CAB', 'CBA' ]
+
+
 
 // 8) Number to Roman
 function intToRoman(num) {
@@ -107,6 +121,8 @@ function intToRoman(num) {
 console.log(intToRoman(9));  // IX
 console.log(intToRoman(12)); // XII
 
+
+
 // 9) Roman to Integer
 function romanToInt(s) {
   const val = { I:1, V:5, X:10, L:50, C:100, D:500, M:1000 };
@@ -122,6 +138,8 @@ function romanToInt(s) {
 }
 console.log(romanToInt("IX"));   // 9
 console.log(romanToInt("XII"));  // 12
+
+
 
 // 10) String compression (aaabbc → a3b2c1)
 function compressString(str) {

@@ -12,6 +12,8 @@ function reverseWords(sentence) {
 }
 console.log(reverseWords("This is javascript class")); // class javascript is This
 
+
+
 // 3) First non-repeated character
 function firstNonRepeatedChar(str) {
   const freq = {};
@@ -20,6 +22,8 @@ function firstNonRepeatedChar(str) {
   return null;
 }
 console.log(firstNonRepeatedChar("entertainment")); // r
+
+
 
 // 4) Title case
 function toTitleCase(sentence) {
@@ -30,6 +34,8 @@ function toTitleCase(sentence) {
     .join(" ");
 }
 console.log(toTitleCase("this is javascript class")); // This Is Javascript Class
+
+
 
 // 5) Longest word in a sentence
 function longestWord(sentence) {
@@ -42,6 +48,8 @@ function longestWord(sentence) {
 }
 console.log(longestWord("this is javascript class")); // javascript
 
+
+
 // 6) Mask account number (12*******87 style)
 function maskAccountNumber(acc) {
   if (acc.length < 4) return acc; // edge case
@@ -49,11 +57,16 @@ function maskAccountNumber(acc) {
 }
 console.log(maskAccountNumber("12345678987")); // 12*******87
 
+
+
+
 // 7) Credit-card formatting (1111-2222-3333-4444)
 function formatCreditCard(cc) {
   return cc.replace(/\D/g, "").match(/.{1,4}/g)?.join("-") || "";
 }
 console.log(formatCreditCard("1111222233334444")); // 1111-2222-3333-4444
+
+
 
 // 8) Check anagram
 function isAnagram(a, b) {
@@ -71,11 +84,16 @@ function isAnagram(a, b) {
 }
 console.log(isAnagram("listen", "silent")); // true
 
+
+
+
 // 9) Remove special characters (keep only letters)
 function removeSpecialChars(str) {
   return str.replace(/[^a-zA-Z0-9]/g, "");
 }
 console.log(removeSpecialChars("hello@#hi&")); // hellohi
+
+
 
 // 10) Move special characters to the end
 function moveSpecialToEnd(str) {
