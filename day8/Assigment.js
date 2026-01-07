@@ -1,5 +1,3 @@
-
-
 let employees = [
   { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
   { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
