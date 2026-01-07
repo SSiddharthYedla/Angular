@@ -1,0 +1,15 @@
+<script>
+  let user = {name: 'sachin', 'last name': 'tendulkar', age:35, add:'mumbai'} 
+
+  let all_keys = Object.keys(user);
+  console.log('all keys:', all_keys);
+  let all_values = Object.values(user);
+  console.log('all values:', all_values); 
+  let all_entries = Object.entries(user);
+  console.log('all entries:', all_entries);
+
+  let userobj= Object.fromEntries(all_entries);
+  console.log('userobj from entries:', userobj);
+
+
+</script>

@@ -1,0 +1,20 @@
+<script>
+  let user = {name: 'sachin', 'last name': 'tendulkar', age:35, add:'mumbai'}
+
+  console.log(user.name);
+  console.log(user.age);
+  console.log(user['last name']);
+  
+  let a ='add';
+  console.log(user[a]); 
+  console.log(user[a]);
+
+  for (key in user){
+    console.log('key is:', key, 'value is:', user[key]);
+  }
+
+  // length of the object
+  let all_keys = Object.keys(user);
+  console.log('length is:', all_keys.length);
+  
+</script>

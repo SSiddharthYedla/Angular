@@ -1,0 +1,21 @@
+<script>
+  class student {
+    constructor(roll, name, course) {
+      this.roll = roll;
+      this.name = name;
+      this.course = course;
+    }
+  }
+  student.prototype.clgname= 'Eureka'
+
+  let std1 = new student(101, 'sachin', 'angular');
+
+  console.log('name of std1:', std1.name);
+  console.log(std1.hasOwnProperty('name')); // true
+
+  console.log('clgname' in std1); // true
+  console.log(std1.hasOwnProperty('clgname')); // false
+
+  console.log('dateofbirth' in std1); // false
+  console.log(std1.hasOwnProperty('dateofbirth')); // false 
+</script>

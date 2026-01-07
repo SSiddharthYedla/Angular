@@ -1,0 +1,20 @@
+<script>
+    class Demo {
+        a = 10;
+        b = 20;
+
+        f1() { // prototype
+            console.log('f1...')
+        }
+        f2 = () => {
+            console.log('f1...')
+        }
+    }
+    Demo.prototype.c = 30;
+    Demo.prototype.f3 = () => {
+        console.log('I am f3...')
+    }
+
+    let obj1 = new Demo();
+    console.log(obj1)
+</script>

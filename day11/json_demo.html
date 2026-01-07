@@ -1,0 +1,14 @@
+<script>
+    let user = { firstName: 'sachin', lastName: 'Tendulkar', age: 35, add: 'mumbai' }
+
+    document.write(user);
+    sessionStorage.setItem('user', user);
+
+    let userStr = JSON.stringify(user);
+    document.write(userStr);
+    sessionStorage.setItem('userInfo', userStr);
+
+    console.log(sessionStorage.userInfo.firstName);
+    let userInfo = JSON.parse(sessionStorage.userInfo);
+    console.log(userInfo.firstName, userInfo.lastName)
+</script>

@@ -1,0 +1,15 @@
+<script>
+    const arr = [10, 20]; // arr = a1b2bc3(address of the array)
+    arr[0] = 15;
+    delete arr[1];
+    arr.push(30);
+    console.log(arr); // [ 15, undefined, 30 ]
+
+
+    // Object.freeze()
+    let cars = ['Tata', 'Honda'];
+    Object.freeze(cars);
+    cars[0] = 'Toyota';
+    delete cars[1];
+    console.log(cars);
+</script>
