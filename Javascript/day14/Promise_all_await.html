@@ -1,0 +1,16 @@
+<script>
+    let urls = [
+        'https://jsonplaceholder.typicode.com/users',
+        'https://jsonplaceholder.typicode.com/comments',
+        'https://jsonplaceholder.typicode.com/todos',
+    ]
+    let promiseArr = urls.map(url => fetch(url));
+
+    async function getData() {
+        let responseArr = await Promise.all(promiseArr);
+        console.log(responseArr);
+        let finalResponseArr = await Promise.all(responseArr.map(response => response.json()))
+        console.log(finalResponseArr)
+    }
+    getData()
+</script>

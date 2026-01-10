@@ -1,0 +1,26 @@
+<script>
+    // looks like sync , actually async
+    // easier debugging, readability
+    console.log('global code starts...')
+
+    function f1() {
+        console.log('I am f1...')
+    }
+
+    async function getData() {
+        setTimeout(f1, 1000)
+        try {
+            let response = await fetch('https://jsonplaceholder.typicode.com/users')
+            let finalResponse = await response.json();
+            console.log(finalResponse)
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    getData()
+
+    console.log('global code continues...')
+    console.log('global code continues...')
+    console.log('global code continues...')
+    console.log('global code ends...')
+</script>
