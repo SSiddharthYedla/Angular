@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
-import { Body } from './body/body';
-import { Footer } from './footer/footer';
-import { Carousel } from './carousel/carousel';
-import { Categories } from './categories/categories';
+import { Body } from './components/body/body';
+import { Footer } from './components/footer/footer';
+import { Carousel } from './components/carousel/carousel';
+import { Categories } from './components/categories/categories';
 
 @Component({
   selector: 'app-root',
